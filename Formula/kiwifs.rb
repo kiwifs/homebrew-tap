@@ -5,21 +5,21 @@
 class Kiwifs < Formula
   desc "Markdown filesystem for agents and teams"
   homepage "https://kiwifs.com"
-  version "0.19.0"
+  version "0.20.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kiwifs/kiwifs/releases/download/v0.19.0/kiwifs_darwin_amd64.tar.gz"
-      sha256 "3c5b16067a151f5e9cfad4333bcc8dfb8b9f21aca36965a298831c8d83f7f80d"
+      url "https://github.com/kiwifs/kiwifs/releases/download/v0.20.0/kiwifs_darwin_amd64.tar.gz"
+      sha256 "9e240ed99e88bd59de417601be1fd73e4e81d22d64b3a05841e103632fa2dda7"
 
       define_method(:install) do
         bin.install "kiwifs"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kiwifs/kiwifs/releases/download/v0.19.0/kiwifs_darwin_arm64.tar.gz"
-      sha256 "7dd359702c673dad217540325dbc424188ec172d1cd7ef8b578bc5d72a4eb818"
+      url "https://github.com/kiwifs/kiwifs/releases/download/v0.20.0/kiwifs_darwin_arm64.tar.gz"
+      sha256 "9c75b2cd01c9780369d42da218022b9a3e7c943bdd0722fc752119fc3f88a680"
 
       define_method(:install) do
         bin.install "kiwifs"
@@ -29,15 +29,15 @@ class Kiwifs < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kiwifs/kiwifs/releases/download/v0.19.0/kiwifs_linux_amd64.tar.gz"
-      sha256 "cd0177b7974a72b6d4fe49c3bf54188600770e67f582eabec77e83d985cbfafd"
+      url "https://github.com/kiwifs/kiwifs/releases/download/v0.20.0/kiwifs_linux_amd64.tar.gz"
+      sha256 "55104c7cda3a7e1cc2e955a0d050231484d6b64cd1bb865f74145d8493eb3a78"
       define_method(:install) do
         bin.install "kiwifs"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kiwifs/kiwifs/releases/download/v0.19.0/kiwifs_linux_arm64.tar.gz"
-      sha256 "ab7974abf11b680503518a55ae0d953d253eb5e81c6576117fcc21c35357e53a"
+      url "https://github.com/kiwifs/kiwifs/releases/download/v0.20.0/kiwifs_linux_arm64.tar.gz"
+      sha256 "b7e5f84db25128b3d6212cd6faf235271467379bf413bedccb5e4a1f5efd89ca"
       define_method(:install) do
         bin.install "kiwifs"
       end
